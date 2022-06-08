@@ -1,0 +1,66 @@
+/* Importar as fontes */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Bold';
+    src: url(../fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+/*Reset da página  */
+/*seletor universal: pega todas tags do html*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Inicio de cabeçalho */
+
+.container_grid  {
+    max-width: 1200px;
+    /* border: 3px solid salmon; */
+    margin: 0 auto;
+}
+ .header-flex {  /*flex-xontainer */
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    align-items: center;
+}
+
+
+header {
+   background-color: #1E1C21;
+   
+}
+header .logo {
+  /* border: 1px solid red; */
+   width: 280px;
+
+}
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid white; */
+
+}
+
+header .menu a{
+    font-family: 'Roboto-Light';
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Fim do cabeçalho */
