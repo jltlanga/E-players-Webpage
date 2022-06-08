@@ -21,6 +21,10 @@
   box-sizing: border-box;
 }
 
+body {
+    font-family: Roboto-Regular;
+}
+
 
 /* Inicio de cabeçalho */
 
@@ -29,6 +33,8 @@
     /* border: 3px solid salmon; */
     margin: 0 auto;
 }
+
+/* Cabeçalho */
  .header-flex {  /*flex-xontainer */
     display: flex;
     justify-content: space-between;
@@ -64,3 +70,11 @@ header .menu a{
 }
 
 /* Fim do cabeçalho */
+
+/* Banner inicio */
+.banner {
+     width: 100%; /*Não precisaria */
+     height: 600px;
+     background-image: url(../images/banner_pilotos.png);
+     background-color: blueviolet;
+}
