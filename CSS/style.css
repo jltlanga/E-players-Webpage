@@ -73,8 +73,10 @@ header .menu a{
 
 /* Banner inicio */
 .banner {
-     width: 100%; /*Não precisaria */
+     /* width: 100%; Não precisaria */
      height: 600px;
      background-image: url(../images/banner_pilotos.png);
      background-color: blueviolet;
+     background-repeat: no-repeat;
+     background-size: 100%;
 }
