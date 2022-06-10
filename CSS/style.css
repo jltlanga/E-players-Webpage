@@ -1,16 +1,20 @@
-/* Importar as fontes */
+/* Importa as fontes da google fontes*/
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 @font-face {
-    font-family: 'Roboto-Light';
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "OpenSans_Condensed-Regular";
+  src: url(../fonts/Open_Sans/static/OpenSans_Condensed/OpenSans_Condensed-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'TitilliumWeb-Bold';
-    src: url(../fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+  font-family: "TitilliumWeb-Bold";
+  src: url(../fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
 }
 
 /*Reset da página  */
@@ -22,61 +26,107 @@
 }
 
 body {
-    font-family: Roboto-Regular;
+  font-family: Roboto-Regular;
 }
-
 
 /* Inicio de cabeçalho */
 
-.container_grid  {
-    max-width: 1200px;
-    /* border: 3px solid salmon; */
-    margin: 0 auto;
+.container_grid {
+  max-width: 1200px;
+  /* border: 3px solid salmon; */
+  margin: 0 auto;
 }
 
 /* Cabeçalho */
- .header-flex {  /*flex-xontainer */
-    display: flex;
-    justify-content: space-between;
-    height: 85px;
-    align-items: center;
+.header-flex {
+  /*flex-xontainer */
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+  align-items: center;
 }
 
-
 header {
-   background-color: #1E1C21;
-   
+  background-color: #1e1c21;
 }
 header .logo {
   /* border: 1px solid red; */
-   width: 280px;
-
+  width: 280px;
 }
 header .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    height: 100%;
-    /* border: 1px solid white; */
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  /* border: 1px solid white; */
 }
 
-header .menu a{
-    font-family: 'Roboto-Light';
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
+header .menu a {
+  font-family: "Roboto-Light";
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Fim do cabeçalho */
 
 /* Banner inicio */
 .banner {
-     /* width: 100%; Não precisaria */
-     height: 600px;
-     background-image: url(../images/banner_pilotos.png);
-     background-color: blueviolet;
-     background-repeat: no-repeat;
-     background-size: 100%;
+  /* width: 100%; Não precisaria */
+  height: 601px;
+  background-image: url(../images/banner_pilotos.png);
+  background-size: 100%;
+  /* background-color: blueviolet; */
+  background-repeat: no-repeat;
+}
+/* Centraliza a informação do banner */
+.banner_info_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 601px;
+}
+
+.banner .banner_info {
+  display: flex; /* Conteúdo ganha forma de bloco e fica lado a lado */
+  flex-direction: column; /* força conteúdo a ficar em coluna */
+  width: 500px;
+  height: 280px;
+  /* border: 1px solid white; */
+  justify-content: space-between;
+}
+.banner .banner_info .info_titulo {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.banner .banner_info .info_texto {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin-top: -90px;
+}
+.banner .banner_info .info_link {
+  /* Centraliza o texto dentro da caixa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  /* display: inline; */
+  border: 1px solid #e71a3f;
+  background-color: #e71a3f;
+  color: white;
+  text-transform: uppercase; /*coloca as palavras em caixa alta*/
+  text-decoration: none;
+  width: 250px;
+  height: 45px;
+  margin: 0 auto; 
+}
+
+/* Patrocinadores */
+.patrocinadores {
+    background-image: url()
 }
