@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* Mobile first */
+ body{
+    padding: 0 20px;
+ }
+ h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+    p{
+        text-align: justify;
+        margin-top: 20px;
+    }
+
+    /* BREAKPOINTS */
+    /* Tablet */
+    @media screen and (min-width: 768px) {
+        h1{
+            color: darkblue;
+            font-size: 40px;
+
+        }
+        p{
+            display: block;
+            font-size: 28px;
+        }
+
+
+        
+    }
+    
+    /* BREAKPOINTS */
+    /* Desktop */
+
+    @media screen and (min-width: 992px) {
+        .container_grid{
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid sienna;
+        }
+        h1{
+            font-size: 24px;
+
+        }
+        p{
+            font-size: 16px;
+        }
+
+        
+    }
+    
+    /* BREAKPOINTS */
+    /* Notebooks ou telas largas */
+
+    @media screen and (min-width: 1200px) {
+        body{
+            background-color: sienna;
+        }
+        
+
+        
+    }
+
+    /* BREAKPOINTS */
+    /* Telas full hd (1920px)*/
+    @media screen and (min-width: 1440px) {
+        
+
+        
+    }
