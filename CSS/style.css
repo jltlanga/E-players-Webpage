@@ -37,6 +37,15 @@ body {
   margin: 0 auto;
 }
 
+/* CONTAINER GERAL DO BOOTSTRAP */
+.container {
+  max-width: 1200px;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
 /* Cabeçalho */
 .header-flex {
   /*flex-xontainer */
@@ -77,7 +86,7 @@ header .menu a {
   /* width: 100%; Não precisaria */
   height: 601px;
   background-image: url(../images/banner_pilotos.png);
-  background-size: cover;
+  background-size: cover; /*Auto-ajusta a imagem*/
   background-repeat: no-repeat;
   /* background-color: blueviolet; */
 }
@@ -117,9 +126,8 @@ header .menu a {
   border-radius: 10px;
   justify-content: center;
 
-  /* display: inline; */
-  border: 1px solid #E71A3F;
-  background-color: #E71A3F;
+  border: 1px solid #e71a3f;
+  background-color: #e71a3f;
   color: white;
   text-transform: uppercase; /*coloca as palavras em caixa alta*/
   text-decoration: none;
@@ -132,13 +140,50 @@ header .menu a {
 .patrocinados {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #1E1C21;
+  background-color: #1e1c21;
   /* background-color: #3d3738; */
 }
 .patrocinados_flex {
   display: flex;
   justify-content: space-between;
   align-items: center; /*para que não estique os elementos*/
- 
+}
+
+/* ***************Produtos********* */
+
+.produtos {
+  background-color: #1E1C21;
+  padding: 30px 0;
+}
+.produtos h2 {
+  font-family: "Roboto-Medium";
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.card {
+  max-width: 250px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to bottom, #000000, #1E1C21);
+}
+
+.card .card-title {
+  font-family: 'Roboto-Medium';
+  /* text-decoration: uppercase; */
+  /* text-transform: uppercase; */
+}
+.card .card-price{
+  font-size: 1.4rem;
+  font-family: 'Roboto-Medium';
+}
+.card .btn-buy{
+  background-color: #C31616;
+  width: 100%;
+  /* text-transform: uppercase; */
+
+}
+.card .btn-buy,
+.card .card-title {
+  text-transform: uppercase;
 
 }

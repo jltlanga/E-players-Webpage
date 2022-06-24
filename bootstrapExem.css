@@ -1,0 +1,22 @@
+.container {
+  max-width: 1200px;
+  border: 1px solid red;
+}
+.container-fluid {
+  border: 1px solid rebeccapurple;
+}
+
+.caixa{
+ 
+  /* background-color: salmon; */
+  /* height: 250px; */
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+  /* margin-right: 5px; */
+  /* margin-left: 2px; */
+ 
+}
+.card{
+  background-color: black;
+ /* color: white; */
+}
