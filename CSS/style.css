@@ -26,7 +26,8 @@
 }
 
 body {
-  font-family: Roboto-Regular;
+  font-family: "Roboto-Regular";
+  color: white;
 }
 
 /* Inicio de cabeçalho */
@@ -42,9 +43,9 @@ body {
   max-width: 1200px;
 }
 
-.card {
+/* .card {
   margin-bottom: 10px;
-}
+} */
 
 /* Cabeçalho */
 .header-flex {
@@ -52,7 +53,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* align-items: center; */
   height: 85px;
 }
 
@@ -79,23 +79,26 @@ header .menu a {
   text-transform: uppercase;
 }
 
+header .menu-bars {
+  display: none;
+}
 /* Fim do cabeçalho */
 
 /* Banner inicio */
 .banner {
   /* width: 100%; Não precisaria */
-  height: 601px;
+  height: 600px;
   background-image: url(../images/banner_pilotos.png);
   background-size: cover; /*Auto-ajusta a imagem*/
   background-repeat: no-repeat;
-  /* background-color: blueviolet; */
+  background-color: blueviolet;
 }
 /* Centraliza a informação do banner */
 .banner .banner_info_box {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 601px;
+  height: 600px;
 }
 
 .banner .banner_info {
@@ -152,7 +155,7 @@ header .menu a {
 /* ***************Produtos********* */
 
 .produtos {
-  background-color: #1E1C21;
+  background-color: #1e1c21;
   padding: 30px 0;
 }
 .produtos h2 {
@@ -164,26 +167,117 @@ header .menu a {
 .card {
   max-width: 250px;
   margin-bottom: 20px;
-  background-image: linear-gradient(to bottom, #000000, #1E1C21);
+  background-image: linear-gradient(to bottom, #000000, #1e1c21);
 }
 
 .card .card-title {
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
   /* text-decoration: uppercase; */
   /* text-transform: uppercase; */
 }
-.card .card-price{
+.card .card-price {
   font-size: 1.4rem;
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
 }
-.card .btn-buy{
-  background-color: #C31616;
+.card .btn-buy {
+  background-color: #c31616;
+
+  border: 1px solid #c31616;
   width: 100%;
   /* text-transform: uppercase; */
-
 }
 .card .btn-buy,
 .card .card-title {
   text-transform: uppercase;
+}
 
+/* Breakpoints  */
+/* Celulares 0-767px
+tablets 768px-991px
+desktop >=992px - 1199px
+telas grandes >=1200px - 1020px 
+
+
+
+*/
+/* Desktopi telas 992px -1199px */
+@media all and (max-width: 1199px) {
+  .container,
+  .container_grid {
+    max-width: 980px;
+  }
+}
+
+/* Tablet  tablets 768px-991px*/
+@media all and (max-width: 991px) {
+  header .logo {
+    width: 230px;
+    margin-left: 15px;
+  }
+
+  /* navbar */
+  header .menu {
+    position: fixed; /* referencia Viewport, isto é na tela do tablet*/
+    top: 0px; /*Coordenadas de posicionamento*/
+    left: -80%;
+    z-index: 100; /*controle de camadas */
+    opacity: 0; /*invisível*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    width: 80%;
+    height: 100%;
+
+    padding: 20px 50px;
+    background-color: rgba(195, 22, 22, 0.98);
+    border-radius: 0 0 0 90px;
+    transition: left 0.4s, opacity 0.6s;
+
+  }
+  header .menu a {
+    margin-bottom: 20px;
+    padding: 20px;
+    /* width: 50px; */
+    border-left: 3px dotted #AAB0AE;
+    font-size: 1.4rem;
+    color: #AAB0AE;
+  }
+
+  header .menu-bars {
+    display: block;
+    width: 45px;
+    margin-right: 15px;
+    color: white;
+  }
+  .mostrarEsconderMenu {
+    left: 0 !important; /*priority*/
+    opacity: 1 !important;
+  }
+
+  .patrocinados {
+    display: none;
+  }
+}
+
+/* SmartPhones  Celulares 0-767px*/
+@media all and (max-width: 767px) {
+  .header-flex {
+    height: 65px;
+  }
+
+  header .menu-bars {
+    width: 25px;
+  }
+
+  header .logo {
+    width: 180px;
+  }
+
+  header .menu a {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 2px dotted #aab0ae;
+    font-size: 1rem;
+  }
 }
