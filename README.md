@@ -1,3 +1,4 @@
 # E-players-Webpage
-Para visualizar acesse o seguinte link:
+By the way, the wab page is still in development. 
+For an overview of the development web page, see the link below:
 <https://jltlanga.github.io/E-players-Webpage/>
