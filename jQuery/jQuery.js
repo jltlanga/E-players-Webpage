@@ -13,7 +13,7 @@ $(document).ready(function(){
         $("h1 span").text("!!");
     });
 
-    //ou
+    //or
     // $("button, input").mousemove(function(){
     //     hello();
     // });

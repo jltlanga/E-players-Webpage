@@ -12,29 +12,35 @@
 }
 
 body {
-    display: flex; /*flex para centralizar o formulário */
+    /* flex para centralizar o formulário */
+    display: flex;
     justify-content: center;
-    justify-items: center;
-    height: 100vh;
+    align-items: center;
 
+    height: 100vh;
+    /* border: 10px solid green; */
 
     background-color: #3A404E;
     color: white;
     font-family: "Roboto-Regular";
 }
 
-/* Mobile first */
+
+/* mobile first */
+
 .container {
     width: 100%;
     max-width: 315px;
     margin: 0 auto;
     /* border: 1px solid red; */
-
+    
+    
 }
 
 .voltar {
-    margin-bottom: 60px;
+    margin-bottom: 60px
 }
+
 .titulo {
     margin-bottom: 100px;
 }
@@ -42,71 +48,65 @@ body {
 .linha {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-bottom: 1px solid #ABABAB;
     align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ababab;
+
 }
 
-/* paints only the first line*/
+/* pinta a borda somente da primeira linha */
 .linha:first-of-type {
-    border-bottom: 1px solid #A0824D;
+    border-bottom: 1px solid #a0824d;
 }
 
 .linha input {
     height: 40px;
     width: 90%;
-    color:  #ABABAB;
+    color: #ababab;
     background-color: transparent;
     border: none;
     outline: none;
-    
-
 }
 
 .linha input::placeholder {
-    color: #ABABAB;
-    font-size: 14px;
+    color: #ababab;
 }
+
 .mensagem {
     text-align: center;
-    color: #C67187;
+    color: #c67187;
     height: 25px;
 }
+
 .signin {
     display: block;
-    color: white;
     width: 80%;
     margin: 25px auto 0;
     background-color: black;
+    color: white;
     padding: 20px;
     border: 1px solid black;
     border-radius: 25px;
     font-size: 1.2rem;
     font-family: "Roboto-Regular";
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 50%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px ) {
     .container {
         max-width: 600px;
     }
     h1 {
         font-size: 3rem;
     }
-    .linha input {
-        font-size: 2rem;
-    }
-
-}
-/* Desktop */
-@media screen and (min-width: 992px) {
-
-}
-/* Tablet */
-@media screen and (min-width: 768px) {
-
-}
-
     
+}
+
+/* Tablet */
+@media screen and (min-width: 992px ) {
+    .container {
+        max-width: 900px;
+    }
+}
